@@ -30,7 +30,7 @@ public class MedicoResource {
 	@Autowired
 	MedicoRepository medicoRepository;
 	
-	@ApiOperation(value="Mostra uma lista de medicow")
+	@ApiOperation(value="Mostra uma lista de medico")
 	@GetMapping("/medicos")
 	public List<Medico> listaMedicos(){
 		return medicoRepository.findAll();
